@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100%;
+background-image: linear-gradient(315deg, #45b3f3 0%, #53c2d9 50%, #c1efff 100%);
+	overflow: clip;
+}
+#cloud-one, #cloud-two, #cloud-three {
+	animation-name: clouds-move;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#cloud-one {
+	position: absolute;
+	top: 10%;
+	right: 0px;
+		animation-name: clouds-move;
+	animation-duration: 15s;
+	animation-delay: -9s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+}
+#cloud-two {
+	position: absolute;
+	top: 45%;
+	right: 0px;
+		animation-name: clouds-move;
+	animation-duration: 20s;
+	animation-delay: -4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#cloud-three {
+	position: absolute;
+	top: 80%;
+	right: 0px;
+		animation-name: clouds-move;
+	animation-duration: 10s;
+	animation-delay: -2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.cloud {
+	width: 200px;
+	height: 80px;
+	background-color: #e6ffff;
+	border-radius: 100px;
+	box-shadow: 0 10px 5px rgba(0,0,0, 0.2);
+}
+.cloud:before, .cloud:after {
+	content: "";
+  position: absolute;
+  border-radius: 100px;
+}
+.cloud:before {
+background-color: #e6ffff;
+	top: -30px;
+	left: 40px;
+	height: 60px;
+	width: 60px;
+}
+.cloud:after {
+	background-color: #e6ffff;
+	height: 100px;
+	width: 100px;
+	right: 30px;
+	top: -50px;
+}
+@keyframes clouds-move {
+0% {transform: translateX(30vw);
+	}
+100% {transform: translateX(-150vw);
+	}
+}
+#clouds-container {
+	overflow: clip;
+}
+#pig-img {
+	width: 300px;
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	animation-name: pig-bounce;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: -2s;
+}
+@keyframes pig-bounce {
+0% {
+		transform: translateY(20vh) rotate(-5deg);
+	}
+	50% {
+		transform: translateY(-20vh) rotate(5deg);
+	}
+	100% {transform: translateY(20vh) rotate(-5deg);
+	}
+}
