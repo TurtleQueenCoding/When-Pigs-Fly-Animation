@@ -20,8 +20,8 @@ background-image: linear-gradient(315deg, #45b3f3 0%, #53c2d9 50%, #c1efff 100%)
 	top: 10%;
 	right: 0px;
 		animation-name: clouds-move;
-	animation-duration: 15s;
-	animation-delay: -9s;
+	animation-duration: 20s;
+	animation-delay: -8s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 }
@@ -30,8 +30,8 @@ background-image: linear-gradient(315deg, #45b3f3 0%, #53c2d9 50%, #c1efff 100%)
 	top: 45%;
 	right: 0px;
 		animation-name: clouds-move;
-	animation-duration: 20s;
-	animation-delay: -4s;
+	animation-duration: 25s;
+	animation-delay: -2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
@@ -40,8 +40,8 @@ background-image: linear-gradient(315deg, #45b3f3 0%, #53c2d9 50%, #c1efff 100%)
 	top: 80%;
 	right: 0px;
 		animation-name: clouds-move;
-	animation-duration: 10s;
-	animation-delay: -2s;
+	animation-duration: 15s;
+	animation-delay: -10s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
@@ -74,7 +74,7 @@ background-color: #e6ffff;
 @keyframes clouds-move {
 0% {transform: translateX(30vw);
 	}
-100% {transform: translateX(-150vw);
+100% {transform: translateX(-110vw);
 	}
 }
 #clouds-container {
